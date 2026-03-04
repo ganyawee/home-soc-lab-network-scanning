@@ -22,16 +22,19 @@ To simulate basic reconnaissance activity and understand how different scanning 
 
 ### 1.Identified Local IP Address
 Used: ip a
+![IP Address](screenshots/ip.png)
 
 ### 2.Verified SSH Service Status
 Used: sudo systemctl status ssh
+![SSH Status](screenshots/ssh-status.png)
 
 ### 3.Performed SYN Scan (Stealth Scan)
 Used: sudo nmap -sS 192.168.64.2
+![SYN Scan](screenshots/syn-scan.png)
 
 ### 4.Performed TCP Connect Scan
 Used: nmap -sT 192.168.64.2
-
+![TCP Scan](screenshots/tcp-scan.png)
 
 
 ## Key Findings
