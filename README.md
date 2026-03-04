@@ -1,13 +1,10 @@
 Home SOC Lab – Network Scanning & Service Enumeration
-
 ## Overview
 This project demonstrates internal network reconnaissance using Nmap to identify exposed services and analyze port states within a Kali Linux virtual environment.
 
 
-
 ## Objective
 To simulate basic reconnaissance activity and understand how different scanning techniques reveal service exposure.
-
 
 
 ## Tools Used
@@ -17,9 +14,7 @@ To simulate basic reconnaissance activity and understand how different scanning 
 - systemctl
 
 
-
 ## Methodology
-
 ### 1.Identified Local IP Address
 Used: ip a
 ![IP Address](screenshots/ip.png)
@@ -42,12 +37,21 @@ Used: nmap -sT 192.168.64.2
 - Observed differences between stealth scan and full TCP connect scan
 - Understood how service state impacts port visibility
 
-
-
+  
 ## Security Insight
 Exposed SSH services increase attack surface and may become targets for brute-force attacks. Proper monitoring, firewall configuration, and authentication hardening are critical defensive measures.
 
 
-
 ## Resume Description
 Built a home cybersecurity lab to simulate internal reconnaissance using Nmap. Identified exposed SSH services and analyzed differences between SYN and TCP connect scans.
+
+
+## Conclusion
+This lab demonstrated how basic network reconnaissance can identify exposed services within a local environment. Through SYN and TCP scans, we observed how different scanning techniques impact port visibility and detection. Proper service management and network monitoring are essential to reduce attack surface.
+
+
+## Future Improvements
+- Perform full port scan (1-65535)
+- Conduct service version detection using nmap -sV
+- Test firewall rules and observe scan differences
+- Implement SSH hardening configurations
